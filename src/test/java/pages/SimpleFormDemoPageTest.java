@@ -35,4 +35,11 @@ class SimpleFormDemoPageTest {
         assertEquals(expected, simple.getUserInputFromSingleInputField());
     }
 
+    @ParameterizedTest
+    @CsvFileSource(resources = "/double_input_fields_data.csv", numLinesToSkip = 1)
+    void checkAddedUserInputs(String value1, String value2, String expected) {
+        simple.doubleInputField(value1, value2);
+        assertEquals(expected, simple.getAddedValuesFromDoubleInputField());
+    }
+
 }
