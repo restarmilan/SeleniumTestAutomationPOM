@@ -54,4 +54,12 @@ public class KeywordContainer {
         Select daySelect = new Select(element);
         daySelect.selectByValue(option);
     }
+
+    public void clickOneFromMUltipleRadioButtons(List<WebElement> elements, String value) {
+        for (WebElement element : elements) {
+            if (element.getAttribute("value").equals(value)) {
+                element.click();
+            }
+        }
+    }
 }
