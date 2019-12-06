@@ -3,6 +3,8 @@ package keywords;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class KeywordContainer {
 
     protected WebDriver driver;
@@ -27,11 +29,19 @@ public class KeywordContainer {
         return driver.getCurrentUrl();
     }
 
-    public boolean elementIsLocated(WebElement element) {
+    public boolean elementIsDisplayed(WebElement element) {
         return element.isDisplayed();
     }
 
     public String getElementInnerText(WebElement element) {
         return element.getText();
+    }
+
+    public void clickOnMultipleCheckbox(List<WebElement> elements, List<String> inputs, String value) {
+        for (int i = 0; i < inputs.size(); i++) {
+            if (inputs.get(i).equals(value)) {
+                elements.get(i).click();
+            }
+        }
     }
 }
