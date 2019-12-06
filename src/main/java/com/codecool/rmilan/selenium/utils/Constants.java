@@ -1,4 +1,4 @@
-package utils;
+package com.codecool.rmilan.selenium.utils;
 
 public final class Constants {
 

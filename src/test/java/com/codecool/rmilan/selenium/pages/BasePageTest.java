@@ -1,11 +1,11 @@
-package pages;
+package com.codecool.rmilan.selenium.pages;
 
+import com.codecool.rmilan.selenium.utils.Constants;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import utils.Constants;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

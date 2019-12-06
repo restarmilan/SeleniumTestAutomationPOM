@@ -1,12 +1,12 @@
-package pages;
+package com.codecool.rmilan.selenium.pages;
 
-import keywords.KeywordContainer;
+import com.codecool.rmilan.selenium.keywords.KeywordContainer;
+import com.codecool.rmilan.selenium.utils.Constants;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
-import utils.Constants;
 
 public class BasePage extends KeywordContainer {
 

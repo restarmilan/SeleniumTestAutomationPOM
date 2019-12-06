@@ -1,4 +1,4 @@
-package keywords;
+package com.codecool.rmilan.selenium.keywords;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -43,5 +43,9 @@ public class KeywordContainer {
                 elements.get(i).click();
             }
         }
+    }
+
+    public String getElementAttribute(WebElement element, String attribute) {
+        return element.getAttribute(attribute);
     }
 }
