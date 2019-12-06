@@ -2,6 +2,7 @@ package com.codecool.rmilan.selenium.keywords;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -47,5 +48,10 @@ public class KeywordContainer {
 
     public String getElementAttribute(WebElement element, String attribute) {
         return element.getAttribute(attribute);
+    }
+
+    public void selectOptionFromDropdown(WebElement element, String option) {
+        Select daySelect = new Select(element);
+        daySelect.selectByValue(option);
     }
 }
