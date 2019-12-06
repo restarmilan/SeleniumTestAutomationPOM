@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SelectListDemoPageTest {
+
     private WebDriver driver;
     private SelectListDemoPage select;
 

@@ -1,6 +1,5 @@
 package com.codecool.rmilan.selenium.pages;
 
-
 import com.codecool.rmilan.selenium.utils.Constants;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
