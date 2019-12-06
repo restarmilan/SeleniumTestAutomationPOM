@@ -41,4 +41,15 @@ public class SimpleFormDemoPage extends KeywordContainer {
     public String getUserInputFromSingleInputField() {
         return getElementInnerText(showUserInput);
     }
+
+    public void doubleInputField(String input1, String input2) {
+        navigateTo(Constants.BASE_URL + "/basic-first-form-demo.html");
+        setElementInput(value1, input1);
+        setElementInput(value2, input2);
+        clickToElement(getTotalButton);
+    }
+
+    public String getAddedValuesFromDoubleInputField() {
+        return getElementInnerText(addedValues);
+    }
 }
